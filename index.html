@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Covid-19 tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous" defer></script>
+</head>
+
+<body id="body">
+
+
+    <div class="container-fluid bg-primary text-center">
+        <div class="row">
+            <div class="col-md-12 p-3">
+
+                <h1 class="heading" style="color:#64ed88"> COVID19</h1>
+            </div>
+        </div>
+        <div class="custom-control custom-switch float-right">
+            <input type="checkbox" class="custom-control-input" id="customSwitches">
+
+            <label id="darkLabel" class="custom-control-label" for="customSwitches">Dark Mode</label>
+        </div>
+    </div><br>
+    <section id="prevention" class="prevention">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Prevention</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <img src="images/hands-and-gestures.svg" alt="" class="img-fluid">
+                        </div>
+                        <h5 class="title">Wash Hands</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <img src="images/health-care.svg" alt="" class="img-fluid">
+                        </div>
+                        <h5 class="title">Wear Mask</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <img src="images/laptop.svg" alt="" class="img-fluid">
+                        </div>
+                        <h5 class="title">Stay Home</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <img src="images/keep-distance.svg" alt="" class="img-fluid">
+                        </div>
+                        <h5 class="title">Keep Distance</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="symptoms" class="symptoms">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up" data-aos-delay="150">
+                <h2>Symptoms</h2>
+            </div>
+            <div class="row">
+
+                <div class="col-xl-6 d-flex order-2 order-lg-1 align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="150">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="row">
+                            <h4><span class="ui"><img src="images/ui.svg" height="25" width="25"></span>What are COVID-19’s symptoms?</h4>
+                            <div class="row content d-flex justify-content-center">
+                                <div class="col-lg-6 col-md-6 col-6">
+                                    <div class="sym-box" data-aos="fade-right" data-aos-delay="300">
+                                        <img src="images/bacteria.svg" alt="" class="img-fluid">
+                                        <p>Cough</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-6">
+                                    <div class="sym-box" data-aos="fade-left" data-aos-delay="300">
+                                        <img src="images/cold.svg" alt="" class="img-fluid">
+                                        <p>Fever</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row content d-flex justify-content-center">
+                                <div class="col-lg-6 col-md-6 col-6">
+                                    <div class="sym-box" data-aos="fade-right" data-aos-delay="150">
+                                        <img src="images/human.svg" alt="" class="img-fluid">
+                                        <p>Difficulty breathing</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-6">
+                                    <div class="sym-box" data-aos="fade-left" data-aos-delay="150">
+                                        <img src="images/icons8-person-tired-96.png" alt="" class="img-fluid">
+                                        <p>Tiredness</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image col-xl-6 d-flex order-1 order-lg-2 align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="300">
+                    <img src="images/undraw_mobile_browsers_lib5.svg" alt="" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="container Tracker">
+        <div class="row">
+            <div class="col-md-2">
+                <img class="rotation1" width="130px" src="bacteria.png" alt="">
+
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="country">Country:</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h1 id="countryName">INDIA</h1>
+                    </div>
+                    <div class="col-md-12 mt-5 text-warning">
+                        <p>Active cases:</p>
+                    </div>
+                    <div class="col-md-12 text-warning">
+                        <h1 id="activeCases"></h1>
+                    </div>
+                    <div class="col-md-12 mt-5 text-danger">
+                        <p>Deaths:</p>
+                    </div>
+                    <div class="col-md-12 text-danger">
+                        <h1 id="deaths"></h1>
+                    </div>
+                    <div class="col-md-12 mt-5 text-success">
+                        <p>Total recovered:</p>
+                    </div>
+                    <div class="col-md-12 text-success">
+                        <h1 id="recovered"></h1>
+                    </div>
+                    <div class="col-md-12 mt-5 text-primary">
+                        <p>Last updated:</p>
+                    </div>
+                    <div class="col-md-12 text-primary">
+                        <h1 id="lastUpdated"></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="Tcases">Total cases:</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h1 style="color: #AAAAAA;" id="totalCases"></h1>
+                    </div>
+                    <div class="col-md-12 mt-5 text-warning">
+                        <p>New active cases:</p>
+                    </div>
+                    <div class="col-md-12 text-warning">
+                        <h1 id="activeNew"></h1>
+                    </div>
+                    <div class="col-md-12 mt-5 text-danger">
+                        <p>New deaths:</p>
+                    </div>
+                    <div class="col-md-12 text-danger">
+                        <h1 id="deathsNew"></h1>
+                    </div>
+                    <div class="col-md-12 mt-5 text-success">
+                        <p>New recovered:</p>
+                    </div>
+                    <div class="col-md-12 text-success">
+                        <h1 id="recoveredNew"></h1>
+                    </div>
+                    <div class="col-md-12 mt-5 text-danger">
+                        <p>Death percentage:</p>
+                    </div>
+                    <div class="col-md-12 text-danger">
+                        <h1 id="percent"></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+
+
+                <img class="rotation" style="margin-top:250px" width="150px" src="bacteria.png" alt="">
+
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="dropdown">
+                    <button id="dropdownName" class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        India
+                    </button>
+                    <div id="dropMenu" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a id="india" class="dropdown-item">India</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="text-center mt-5 col-sm-12">
+            <pre id="credits">Created by <a href="#">Shaw</a></pre>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+
+
+</body>
+
+</html>
